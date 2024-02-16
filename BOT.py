@@ -108,9 +108,10 @@ def logo():
 """%(O))
 
 
-def meyexudi():
-  os.system('termux-setup-storage')
-    os.system('xdg-open https://www.facebook.com/UPDATE.DARK.CYBER.BD71')
+def reg():
+    os.system('termux-setup-storage')
+    os.system('clear')
+    os.system('xdg-open https://www.facebook.com/bk4human')
     logo()
     print ('')
     print ('                     Checking Approval')
@@ -119,32 +120,46 @@ def meyexudi():
         to = open('/sdcard/Android/.bs7nt.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
-    httpCaht = requests.get('https://github.com/Fuckbd71/Approval.txt/blob/main/1.txt').text
-    if id in httpCaht:
-      print(fuckyoursali)
-      print(hedaborakarent)
-      msg = str(os.geteuid())
-      #time.sleep(0.5)
-      print()
-      pass
+    r = requests.get('https://github.com/Fuckbd71/Approval.txt/blob/main/1.txt').text
+    if to in r:
+        time.sleep(2)
+        bsn_menu()
     else:
-      print(meyermarexudi)
-     # print(" \033[32;1m[+] Your Kay : "+id)
-      print(' \x1b[38;5;208m╔══[𝟷]💥  FREE-FIRE-TIK-TOK- ID CLONING')      
-      print(' \x1b[1;98m║══[𝟸]💥  ONLY ACTIVE ID CLONE 100%')
-      print(' \x1b[1;93m║══[𝟸]💥  CP ID WILL BE LOGIN 80%')
-      print(' \x1b[1;97m║══[𝟸]💥  WI-FI  AND DATA BOTH WORKING 100%')
-      print(' \x1b[1;95m║══[𝟸]💥  15 DAY 250 TAKA ')
-      print(' \x1b[38;5;50m║══[𝟸]💥  30 DAY 500 TAKA ')
-      os.system('espeak    " Hi,   Sir,  Assalamualaikum,   I,   Am,    Robot,   of,   JIBON,   AHMED,    Please,   Send,   Your,   Key,"')
-      print(" \x1b[0m║══[𝟸] YOUR KEY : "+id)
-      input(' \033[1;30m╚══[𝟹] IF U WANT TO BUY THEN PRESS ENTER ')
-      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('am start https://wa.me/+8801774105104?text='+tks),approval()      
-      time.sleep(1)
-      meyexudi()
-  except:
-    sys.exit()
-meyexudi()
+        os.system('clear')
+        os.system('xdg-open https://www.facebook.com/UPDATE.DARK.CYBER.BD71')
+        logo()
+        print('')
+        print ('               \tApproved Not Detected')
+        print ('')
+        print("            \033[1;97mTHIS TOOL IS PAID YOU NEED TO GET APPROVED FIRST")
+        print ('               \033[1;97mYOUR KEY : ' + to)
+        print("               COPY AND SEND KEY TO ADMIN")
+        name = input("               YOUR NAME : ")
+        input('\033[1;97m               PRESS ENTER  TO SEND TOKEN')
+        time.sleep(3.5)
+        tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+to
+        os.system('am start https://wa.me/+8801944408580?text=' + tks)
+        reg()
+
+def reg2():
+    os.system('clear')
+    logo()
+    print('')
+    print ('\tApproval Not Detected')
+    print('')
+    id = uuid.uuid4().hex[:50]
+    print("            \033[1;97mTHIS TOOL IS PAID YOU NEED TO GET APPROVED FIRST")
+    print ('               \033[1;97mYOUR KEY : ' + id)
+    print("               COPY AND SEND KEY TO ADMIN")
+    name = input("               YOUR NAME : ")
+    input('\033[1;97m               PRESS ENTER  TO SEND TOKEN')
+    time.sleep(3.5)
+    tks = 'Dear%20MAHDI-sir,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+id
+    os.system('am start https://wa.me/+8801944408580?text=' + tks)
+    sav = open('/sdcard/Android/.bs7nt.txt', 'w')
+    sav.write(id)
+    sav.close()
+    reg()
 
 
 
