@@ -108,11 +108,17 @@ def logo():
 """%(O))
 
 def meyexudi():
-  os.system('clear')
-  print(logo)
-  uuid = str(os.geteuid()) + str(os.getlogin())
-  id = "-".join(uuid)
-  try:
+  os.system('termux-setup-storage')
+    os.system('clear')
+    os.system('xdg-open https://www.facebook.com/UPDATE.DARK.CYBER.BD71')
+    logo()
+    print ('')
+    print ('                     Checking Approval')
+    time.sleep(1) 
+    try:
+        to = open('/sdcard/Android/.bs7nt.txt', 'r').read()
+    except (KeyError, IOError):
+        reg2()
     httpCaht = requests.get('https://github.com/Fuckbd71/Approval.txt/blob/main/1.txt').text
     if id in httpCaht:
       print(fuckyoursali)
