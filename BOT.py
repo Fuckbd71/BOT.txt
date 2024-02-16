@@ -107,9 +107,9 @@ def logo():
 
 """%(O))
 
+
 def meyexudi():
   os.system('termux-setup-storage')
-    os.system('clear')
     os.system('xdg-open https://www.facebook.com/UPDATE.DARK.CYBER.BD71')
     logo()
     print ('')
